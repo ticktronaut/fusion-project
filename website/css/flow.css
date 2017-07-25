@@ -1,0 +1,175 @@
+/* footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.myfooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  border-top: 1px solid #666;
+  padding: 5px 0;
+  color: #222;
+  line-height: 36px;
+  background-color: lightgrey
+}
+.footer-icon img {
+  margin: 0 5px 0 0;
+}
+/* headers styles */
+#technologies-header {
+  background-image: url(/assets/icons/technologies.svg);
+  background-repeat: no-repeat;
+}
+#modular_design-header {
+  background-image: url(/assets/icons/modular_design.svg);
+  background-repeat: no-repeat;
+}
+#user_interface-header {
+  background-image: url(/assets/icons/user_interface.svg);
+  background-repeat: no-repeat;
+}
+#sensor_network-header {
+  background-image: url(/assets/icons/sensor_network.svg);
+  background-repeat: no-repeat;
+}
+#algorithms-header {
+  background-image: url(/assets/icons/algorithms.svg);
+  background-repeat: no-repeat;
+}
+
+.headers {
+  padding-left: 30px;
+}
+
+/* navigation sub menu styles */
+#technologies-nav {
+  background-image: url(/assets/icons/technologies_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#modular_design-nav {
+  background-image: url(/assets/icons/modular_design_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#user_interface-nav {
+  background-image: url(/assets/icons/user_interface_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#sensor_network-nav {
+  background-image: url(/assets/icons/sensor_network_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#algorithms-nav {
+  background-image: url(/assets/icons/algorithms_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#github-nav {
+  background-image: url(/assets/icons/github_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#vimeo-nav {
+  background-image: url(/assets/icons/vimeo_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+#github-website-nav {
+  background-image: url(/assets/icons/code_small.svg);
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+.headers-nav {
+  padding-left: 10px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+
+
+.bricksfeature{
+}
+.content{
+  margin-top: 0px;
+}
+
+.architecturedescription {
+    float: none;
+}
+
+.architecturecontent {
+    float: none;
+    text-align: center;
+}
+
+.bricksfeature {
+    margin: auto;
+    padding: auto;
+}
+
+.brick_img {
+    margin-top: 10px;
+    height: 65px;
+}
+
+.brick_text {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.brick_button {
+    margin-top: 40px;
+}
+
+.logo {
+    text-align: center;
+    
+    img {
+        vertical-align: middle;
+    }
+}
+
+a.button_link {
+display: inline-block;
+background: lightgrey;
+padding: 5px 8px;
+border-radius: 5px;
+}
+a.button_link:hover {
+background: rgb(80, 80, 80);
+}
+
+.section-white {
+    background-color: #ffffff;
+    /*border-bottom: 1px solid #E0E0E0;*/
+    /*border-top: 1px solid #E0E0E0;*/
+    padding: 20px 0;
+}
+
+.section-grey {
+    background-color: #fafafa;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    padding: 20px 0;
+}

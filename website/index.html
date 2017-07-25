@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>FUSION Project</title>
+  <meta property="og:title" content="FUSION sensor platform" />
+  <meta property="og:description" content="FUSION is a modular sensor platform.">
+  <meta property="og:url" content="http://www.fusion-project.io" />
+  <meta property="og:image" content="http://fusion-project.io/assets/fusion.png" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!--<link href="/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="/css/flow.css" rel="stylesheet">
+  <link href="/css/flip.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.png">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]--> 
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html#">FUSION Project</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="headers-nav" id="technologies-nav" href="index.html#technologies">Technologies</a></li>
+                <li><a class="headers-nav" id="modular_design-nav" href="index.html#modular_design">Modular Design</a></li>
+                <li><a class="headers-nav" id="user_interface-nav" href="index.html#user_interface">User Interface</a></li>
+                <li><a class="headers-nav" id="sensor_network-nav" href="index.html#sensor_network">Sensor Network</a></li>
+                <li><a class="headers-nav" id="algorithms-nav" href="index.html#algorithms">Algorithms</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Social Media</li>
+                <li><a class="headers-nav" id="github-nav"  href="https://github.com/ticktronaut/fusion-project" target="_blank">Github</a></li>
+                <li><a class="headers-nav" id="vimeo-nav"  href="https://vimeo.com/user67981710" target="_blank">Vimeo</a></li>
+                <!--<li><a class="headers-nav" id="github-website-nav" href="https://github.com/ticktronaut/fusion-project" target="_blank">Website Code</a></li>-->
+              </ul>
+          </li>
+          <li><a href="/documentation.html">Documentation</a></li>
+          <li><a href="/connect.html">Connect</a></li>
+          <li><a href="/impressum.html">Contact</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  
+  <br><br><br>
+  <br><br>
+  <!-- logo -->
+  <section>
+    <section id="fusion-logo">
+      <div style="section-white">
+        <div class="container">
+          <div class="logo">
+            <img src="/assets/logo-fusion.svg" class="logo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- architecture -->
+    <section id="introduction">
+      <div class="section-white">
+        <div class="container">
+          <div class="architecturedescription row row-centered">
+            <div class="col-sm-6 col-centered" style="margin-right: 3px; margin-left: 3px;">
+              <br>
+              <p style="text-align: justify">
+                <i>FUSION</i> Project is an open-source framework for creating embedded sensor platforms based on a modular principle. Its core features are its extremely flexible and modular design, the support of wireless mesh interconnection as well as the support of machine learning and sensor fusion APIs. It is planned to support several embedded hardware platforms, like the Rapsberry Pi Zero.
+              </p>
+              <br>
+            </div>
+          </div>
+          <div class="architecturecontent row row-centered">
+            <div class="bricksfeature flip col-sm-4 col-centered feature" style="width:120px; height: 210px; padding-top: 100px; margin-left: 2px; margin-right: 2px; border:1px solid #CCC; border-radius:5px; padding: 0px">
+              <div class="card">
+                <div class="face front">
+                  <div class="inner">
+                    <div class="brick_img">
+                      <img src="/assets/brick1.svg" class="bricks_images">
+                    </div>
+                    <div class="brick_text">
+                      <p>sensor<br><b>bricks</b></p>
+                    </div>
+                    <div class="brick_button">
+                      <button class="btn btn-default btn-xs">learn more</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="face back">
+                  <div class="inner">
+                    <div class="content">
+                      <p><b>Modular design</b> by arbitrary mix of four different types of bricks:</p>
+                      <img style="margin-top: -15px;" src="/assets/brick_types.svg" class="bricks_images">
+                    </div>
+                    <div class="button">
+                      <button class="btn btn-default btn-xs">Back</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bricksfeature flip col-sm-4 col-centered feature" style="width:120px; height: 210px; margin-left: 2px; margin-right: 2px; border:1px solid #CCC; border-radius:5px; padding: 0px">
+              <div class="card">
+                <div class="face front">
+                  <div class="inner">
+                    <div class="brick_img">
+                      <img src="/assets/brick2.svg" class="bricks_images">
+                    </div>
+                    <div class="brick_text">
+                      <p>sensor<br><b>net</b></p>
+                    </div>
+                    <div class="brick_button">
+                      <button class="btn btn-default btn-xs">learn more</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="face back">
+                  <div class="content">
+                    <p>Interconnection of FUSION Project in a <b>mesh network</b> by using network bricks.</p>
+                    <img style="margin-top: -15px;" src="/assets/mesh.svg" class="bricks_images">
+                  </div>
+                  <div class="button">
+                    <button class="btn btn-default btn-xs">Back</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bricksfeature flip col-sm-4 col-centered feature" style="width:120px; height: 210px; margin-left: 2px; margin-right: 2px; border:1px solid #CCC; border-radius:5px; padding: 0px">
+              <div class="card">
+                <div class="face front">
+                  <div class="inner">
+                    <div class="brick_img">
+                      <img src="/assets/brick3.svg" class="bricks_images">
+                    </div>
+                    <div class="brick_text">
+                      <p>sensor<br><b>fusion</b></p>
+                    </div>
+                    <div class="brick_button">
+                      <button class="btn btn-default btn-xs">learn more</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="face back">
+                  <div class="content">
+                    <p>Access to powerful open-source <b>machine learning</b> and <b>sensor fusion</b> APIs.</p>
+                    <img style="margin-top: -15px;" src="/assets/ai_algorithms.svg" class="bricks_images">
+                  </div>
+                  <div class="button">
+                    <button class="btn btn-default btn-xs">Back</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="technologies">
+      <div class="section-white">
+        <div class="container">
+          <div class="row row-centered">
+            <div class="col-sm-6 col-centered" style="margin-right:3px; margin-left: 3px;">
+              <h3 class="page-header headers" id="technologies-header">TECHNOLOGIES</h3>
+              <p style="text-align: justify"><i>FUSION</i> Project relies a number of powerful open-source technologies in order to give easy access to their capabilities.</p>
+            </div>
+            <div class="force_map col-sm-12 col-centered" id="tech-force" style="padding-right:0px; padding-left: 0px; height: 560px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="modular_design">
+      <div class="section-white">
+        <div class="container">
+          <div class="row row-centered">
+            <div class="col-sm-6 col-centered" style="margin-right:3px; margin-left: 3px;">
+              <h3 class="page-header headers" id="modular_design-header">MODULAR DESIGN</h3>
+              <p style="text-align: justify"><!--As soon as available: description of modular design. --><!--... hier vlt. ein GIF das den Zusammenbau eines Sensormodules zeigt--></p>
+              <div class="alert alert-info">
+                More Information will follow, as soon as the first prototype is ready.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="user_interface">
+      <div class="section-white">
+        <div class="container">
+          <div class="row row-centered">
+            <div class="col-sm-6 col-centered" style="margin-right:3px; margin-left: 3px;">
+              <h3 class="page-header headers" id="user_interface-header">USER INTERFACE</h3>
+              <p style="text-align: justify"><!--As soon as available: description of user interface.--><!--... Hier vlt. ein GIF das die user interaction zeigt, wie (wie man bricks einbaut, und die erkannt werden)--></p>
+              <div class="alert alert-info">
+                More Information will follow, as soon as the first prototype is ready.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sensor_networks">
+      <div class="section-white">
+        <div class="container">
+          <div class="row row-centered">
+            <div class="col-sm-6 col-centered" style="margin-right:3px; margin-left: 3px;">
+              <h3 class="page-header headers" id="sensor_network-header">SENSOR NETWORK</h3>
+              <p style="text-align: justify"><!--As soon as available: description of sensor network --><!-- ... Hier ein GIF wie man ein Modul einbaut und das dann verbaut wird.---></p>
+              <div class="alert alert-info">
+                More Information will follow, as soon as the first prototype is ready.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="algorithms">
+      <div class="section-white">
+        <div class="container">
+          <div class="row row-centered">
+            <div class="col-sm-6 col-centered" style="margin-right:3px; margin-left: 3px;">
+              <h3 class="page-header headers" id="algorithms-header">ALGORITHMS</h3>
+              <p style="text-align: justify"><!--As soon as available: description of algorithms.--></p>
+              <div class="alert alert-info">
+                More Information will follow, as soon as the first prototype is ready.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
+   <footer class="myfooter footer">
+    <div class="container">
+      <div class="pull-left">
+        <span class="footer-icon text-muted"><a href="https://github.com/ticktronaut/fusion-project" target="_blank"><img width=20px src="assets/icons/github.svg"></a></span>
+        <span class="footer-icon text-muted"><a href="https://vimeo.com/user67981710" target="_blank"><img width=20px src="assets/icons/vimeo.svg"></a></span>
+        <!--<span class="footer-icon text-muted"><a href="https://github.com/ticktronaut/fusion-project" target="_blank"><img width=20px src="assets/icons/code.svg"></a></span>-->
+      </div>
+      <div class="pull-right">
+        <span>made with <span><img width=20px src="assets/icons/heart.svg"></span> by ticktronaut</span>
+        <span>•</span>
+        <span><a href="/impressum.html#impressum">impressum</a></span>
+        <span>•</span>
+        <span><span><a href="/impressum.html#icons">icons</a></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="js/d3.js"></script>
+  <script src="js/tech_force.js"></script>
+  <script>
+      $('.flip').click(function(){
+          $(this).find('.card').toggleClass('flipped');
+      });
+  </script>
+</body>
+
+</html>
