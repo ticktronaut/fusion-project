@@ -1,0 +1,3 @@
+# robot.txt for http://lektor.sappz.de
+User-agent: *
+Disallow: /

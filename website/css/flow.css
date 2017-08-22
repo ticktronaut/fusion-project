@@ -21,6 +21,9 @@ body {
 .footer-icon img {
   margin: 0 5px 0 0;
 }
+.logos img {
+  margin: 10px 10px 0 0;
+}
 /* headers styles */
 #technologies-header {
   background-image: url(/assets/icons/technologies.svg);
