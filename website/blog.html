@@ -21,7 +21,7 @@
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/htmlion5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]--> 
 </head>
@@ -75,9 +75,85 @@
       </div>
       <div class="row">
         <div class="col-sm-8 blog-main">
-          <section id="apm">
+          <section id="porting-pynq-architecture">
             <div class="blog-post">
-              <h3 class="page-header" id="apm-header">
+              <h3 class="page-header" id="porting-pynq-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  PORTING PYNQ TO MICROZED BOARD</h3>
+              <p class="blog-post-meta">
+                October 30, 2017 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
+              </p>
+              <p>
+                A first test of PYNQ has been done on the Microzed board (Zynq 7Z010 version). PYNQ has initially been designed for the Zynq 7Z020. In this test the Microzed board for Zynq 7Z010 was used, so some work on porting PYNQ had to be done first.
+              </p>
+              <p>
+                Thanks to the <a href="https://groups.google.com/forum/#!msg/pynq_project/khyhCX16e_c/XpfQ5cR_AwAJ">the input of Johannes Vanoverschelde and the guidance of Peter Odgen</a> (one of the contributors of the PYNQ project) and Peter Odgen's <a href="https://gist.github.com/PeterOgden/9a5054a06408d2bd711d6de563281930"> outlines on how to port PYNQ</a> it was possible to overcome first difficulties and get a successful build of the sd card image.
+              </p>
+              <p>
+                A <a href="https://github.com/ticktronaut/PYNQ" target="_blank">github repository</a> for this port of PYNQ has been created. This is a starting point for further development.
+              </p>
+              <p>In order to get a bootable sd card either a precompiled image can be downloaded from <a href="https://fusion-project.io/assets/pynq_mz7010_v1.0.img.zip" target="_blank">here</a>, or the sd-card image can be compiled by cloning or downloading the repository and following <a href="http://pynq.readthedocs.io/en/latest/pynq_sd_card.html#building-the-image" target="_blank">the instructions of the pynq documentation</a>.
+              </p>
+                <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">git clone https://github.com/ticktronaut/PYNQ.git</pre></div>
+            </div>
+          </section>
+          <section id="software-architecture">
+            <div class="blog-post">
+              <h3 class="page-header" id="software-architecture-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  SOFTWARE ARCHITECTURE</h3>
+              <p class="blog-post-meta">
+                September 14, 2017 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
+              </p>
+              <p>
+                An essential decision on sustainable architectural design has been made for <i>FUSION</i> project. Creating a software architecture which is handling the benefits of the FPGA and the ARM cores of the zynq processor, while still offering full modularity turned out to be a challenging task. During research on this we came across the PYNQ project, which turned out to have a lot of features we also had in mind. To top it all, it is based on Ubuntu Linux, which offers many conveniences like a package manager.
+              </p>
+              <p>
+                <a target="_blank" href="http://www.pynq.io"><img alt="pynq" width=300 src="assets/blog/pynq.png"></a>
+              </p>
+              <p>
+                Pynq supports python programming using jupyter notebooks. Python bindings of brackets of C codes running on soft-cores on the FPGA allow interfacing programmable logic cores. The FPGA bitfiles are provided by so called hardware overlays, which can be used for different purposes on demand during runtime. By this way the development of software, optimized for paralallized hardware, using the Python programming language is possible. See the <a target="_blank" href="http://www.pynq.io">PYNQ webpage</a> for more information.
+              </p>
+              <p>
+                It might be a good idea to contribute to this project.
+              </p>
+            </div>
+          </section>
+          <section id="package-manager">
+            <div class="blog-post">
+              <h3 class="page-header" id="package-manager-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  BENEFITS OF A PACKAGE MANAGER</h3>
+              <p class="blog-post-meta">
+                September 2, 2017 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
+              </p>
+              <p>
+                During exploration of Linux systems for <i>FUSION</i> Project on the Microzed board, serveral possiblities have been worked out. Petalinux has been tested (see the blog <a href="#amp">post about Open AMP</a>). In order to be more flexible according own customizations of the system, the modular embedded linux Yocto project has been examined. It allows customizations, however installing software is very time consuming and requires a lot of knowledge about desired packages and their dependencies.
+              </p>
+              <p>
+                Since <i>FUSION</i> Projects modular system must be flexible enough to allow software to be added easily in appropriate time, a package manager is essential. Due to this a Debian-based Linux distribution is considered for further experiments.
+              </p>
+            </div>
+          </section>
+          <section id="microzed">
+            <div class="blog-post">
+              <h3 class="page-header" id="microzed-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  MICROZED BOARD</h3>
+              <p class="blog-post-meta">
+                August 11, 2017 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
+              </p>
+              <p>
+                The first board <i>FUSION</i> Project will support is AVnets Microzed board. The Microzed board contains one of Xilinx's zynq devices (zynq-7010 or zynq-7020). This System on Chip (SoC) offers the advantages of software programmability of a dual-core ARM-based processor and the hardware programmability of an FPGA. The FPGA may be used for hardware acceleration including features like DSP or CPU soft-cores and parallel execution, while the dual-core ARM processor gives the system the convenience of usablity which is offered by a Linux system. As the <a href="#amp">previous post</a> shows, one of two ARM cores might still be used for realtime embedded operations temporarily.
+              </p>
+              <p>
+                <img alt="mz_board" src="assets/blog/mz_board.jpg">
+              </p>
+            </div>
+          </section>
+          <section id="amp">
+            <div class="blog-post">
+              <h3 class="page-header" id="amp-header">
                   <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
                   ASYMMETRIC MULTI-PROCESSING</h3>
               <p class="blog-post-meta">
@@ -133,7 +209,10 @@
           <div class="sidebar-module">
             <h4>Archives</h4>
             <ol class="list-unstyled">
-              <li><a href="#apm">July 2017</a></li>
+              <li><a href="#porting-pynq-header">October 2017</a></li>
+              <li><a href="#software-architecture-header">September 2017</a></li>
+              <li><a href="#microzed-header">August 2017</a></li>
+              <li><a href="#amp">July 2017</a></li>
               <li><a href="#heavy_development">June 2017</a></li>
             </ol>
           </div>
