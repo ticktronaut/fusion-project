@@ -75,6 +75,42 @@
       </div>
       <div class="row">
         <div class="col-sm-8 blog-main">
+          <section id="eup-technical">
+            <div class="blog-post">
+              <h3 class="page-header" id="eup-technical-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  A MODULAR APPROACH FOR SENSOR NETWORKS</h3>
+              <p class="blog-post-meta">
+              January 14, 2019 by <a href="mailto:andreas1.schmid@stud.uni-regensburg.de">Andreas Schmid</a>
+              </p>
+              <p>
+              As a foundation for the user friendly programming interface described in the previous blog entry, a simple sensor network has been implemented.
+              </p>
+              <p>
+              A modular approach with exchangable components allows for easy customization of the sensor network.
+              Furthermore, technical and complex aspects of the sensor network can be hidden from end users in order to keep the programming interface as simple as possible.
+              Of course, more experienced users are still encouraged to apply their advanced technical knowledge to extend and improve the sensor network by writing their own components.
+              </p>
+              <p>
+              The sensor network consists of a central gateway running Linux (e.g. a Raspberry Pi) and several microcontroller-based sensor nodes. Currently, they communicate wirelessly via WiFi - other communication protocols will be added in the future.
+              </p>
+              <p>
+              The programming interface and the sensor network are built upon following main components:
+              <ul>
+                  <li><b>Sensor Nodes:</b> <br>Hardware nodes that read sensor data and communicate with a central gateway wirelessly.</li>
+                  <li><b>Communication Daemon:</b> <br>A background process on the central gateway that handles communication between the sensor nodes and the programming API via Unix Domain Sockets.</li>
+                  <li><b>Programming API:</b> <br>An abstract model of the sensor nodes, implemented as a programming library in Python. Functions for data processing and visualisation are also included in this layer.</li>
+                  <li><b>Programming Interface:</b> <br>The actual programming environment based on jupyter notebooks, that can be used to program the sensor network.</li>
+              </ul>
+              </p>
+              <p>
+              To this end, several analog and digital sensors, as well as basic methods of data processing are supported.
+              </p>
+              <p>
+              That's it for now - in the next blog entry, I will show you an example application.
+              </p>
+            </div>
+          </section>
           <section id="programming-interface">
             <div class="blog-post">
               <h3 class="page-header" id="programming-interface-header">
