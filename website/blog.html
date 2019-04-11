@@ -76,6 +76,25 @@
       <div class="row">
         <div class="col-sm-8 blog-main">
           <section id="eup-technical">
+            
+            <section id="jupyter-live-plot">
+            <div class="blog-post">
+              <h3 class="page-header" id="jupyter-live-plot-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  Dynamic Live Plot now also for Jupyter Notebooks</h3>
+              <p class="blog-post-meta">
+                April 11, 2019 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
+              </p>
+              <p>
+                Dynamic Live Plots are also available for Jupyter Notebooks. We also implemnted a way to source plots, embedded in jupyter notebooks, without blocking subsequent cells from executing.
+              </p>
+              <p><img src="assets/blog/jupyter_plot.gif" style="width: 95%; height: auto;"></p>
+              <p>
+                Check it out on <a target="_blank" href="https://github.com/ticktronaut/dynamic_live_plot">Github</a>.
+              </p>
+            </div>
+          </section>
+            
             <div class="blog-post">
               <h3 class="page-header" id="eup-technical-header">
                   <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
@@ -96,13 +115,13 @@
               </p>
               <p>
               The programming interface and the sensor network are built upon following main components:
+              </p>
               <ul>
                   <li><b>Sensor Nodes:</b> <br>Hardware nodes that read sensor data and communicate with a central gateway wirelessly.</li>
                   <li><b>Communication Daemon:</b> <br>A background process on the central gateway that handles communication between the sensor nodes and the programming API via Unix Domain Sockets.</li>
                   <li><b>Programming API:</b> <br>An abstract model of the sensor nodes, implemented as a programming library in Python. Functions for data processing and visualisation are also included in this layer.</li>
                   <li><b>Programming Interface:</b> <br>The actual programming environment based on jupyter notebooks, that can be used to program the sensor network.</li>
               </ul>
-              </p>
               <p>
               To this end, several analog and digital sensors, as well as basic methods of data processing are supported.
               </p>
@@ -136,21 +155,43 @@
               </p>
             </div>
           </section>
+          
+          <section id="dynamic-live-plot">
+            <div class="blog-post">
+              <h3 class="page-header" id="dynamic-live-plot-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  Dynamic Live Plot in the browser</h3>
+              <p class="blog-post-meta">
+                May 23, 2018 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
+              </p>
+              <p>
+                It is not always known at runtime, which data pops up in IOT publish subscriber systems. When it comes to plotting sensor values in a live chart, a flexible solution, which is capable of dynamically add and delete line glyphs is necessary for this task. The class BokehLivePlot is a simple way to plot emerging data, just by passing a dictionary containing the data desired to plot.
+              </p>
+              <p><img src="https://raw.githubusercontent.com/ticktronaut/dynamic_live_plot/master/showcase.gif" style="width: 95%; height: auto;"></p>
+              <p>
+                All this magic is done using <a href="https://bokeh.pydata.org/en/latest/">Bokeh</a>, a Python library, that is capable of rendering interactive plots in the web-browser. Our implementation is able to dynamically add or remove plots or line glyphs, just as data emerges in a completely non-blocking manner.
+              </p>
+              <p>
+                Try it out yourself! All codes and documentation have been published open source on <a target="_blank" href="https://github.com/ticktronaut/dynamic_live_plot">Github</a>.
+              </p>
+            </div>
+          </section>
+          
           <section id="custom-pynq-overlay">
             <div class="blog-post">
               <h3 class="page-header" id="ar-header">
                   <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
-                  CUSTOM PYNQ MICROZED</h3>
+                  FUSION AR App</h3>
               <p class="blog-post-meta">
                 April 25, 2018 by <a href="https://hps.oth-regensburg.de/~gsa39665/contact.html" target="_blank">Andreas Gschossmann</a>
               </p>
               <p>
-                We validated the use of Augmented Reality (AR) in <i>FUSION</i> Project. Vuforia is an Augmented Reality SDK. Tracking apps can be created in the Games Engine <a href="https://unity.com">Unity</a>. Vuforia is capable of tracking object targets. It seemed a good starting point to check out Augmented Reality.
+                We validated the use of Augmented Reality (AR) in <i>FUSION</i> Project. Vuforia is an Augmented Reality SDK. Applications for object tracking can be created in the Games Engine <a href="https://unity.com">Unity</a>. Vuforia is capable of tracking object targets. It seemed a good starting point to check out Augmented Reality.
               </p>
               <p>
                 So <a href="mailto:andreas1.schmid@stud.uni-regensburg.de">Andreas Schmid</a> made a test setup, displaying sensor data from our throwable sensor nodes. Enjoy the little teaser on he made for this on <a href="https://vimeo.com/fuspro" target="_blank">Vimeo</a>:
               </p>
-              <iframe src="https://player.vimeo.com/video/327759252" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe src="https://player.vimeo.com/video/327759252" width="480" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <!--<p><a href="https://vimeo.com/327759252">augmented reality test for fusion-project</a> from <a href="https://vimeo.com/fuspro">FUSION project</a> on <a href="https://vimeo.com">Vimeo</a>.</p>-->
             </div>
           </section>
@@ -303,7 +344,9 @@
           <div class="sidebar-module">
             <h4>Archives</h4>
             <ol class="list-unstyled">
-              <li><a href="#programming-interface-header">January 2019</a></li>
+              <li><a href="#jupyter-live-plot-header">April 2019</a></li>
+              <li><a href="#eup-technical-header">January 2019</a></li>
+              <li><a href="#dynamic-live-plot-header">May 2018</a></li>
               <li><a href="#ar-header">April 2018</a></li>
               <li><a href="#custom-pynq-overlay">November 2017</a></li>
               <li><a href="#porting-pynq-header">October 2017</a></li>
