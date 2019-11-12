@@ -76,7 +76,30 @@
       <div class="row">
         <div class="col-sm-8 blog-main">
             
-            <section id="jupyter-live-plot">
+           <section id="pynq-mods-custom-i2c">
+            <div class="blog-post">
+              <h3 class="page-header" id="pynq-mods-custom-i2c-header">
+                  <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                  PYNQ-MODS - Custom I2C master demo</h3>
+              <p class="blog-post-meta">
+              November 12, 2019 by <a href="mailto:martin.hofmann@oth-regensburg.de">Martin Hofmann</a>
+              </p>
+              <p>
+		<a href="https://github.com/myorbit/pynq-mods">pynq-mods</a> is a small series of examples on how to modify or enhance PYNQ. These examples normally are provided with a how-to approach utilizing Jupyter Notebooks and gives a deeper insight on how to customize and understand <a href="https://github.com/Xilinx/PYNQ">PYNQ</a>.
+              </p>
+              <p>
+In this part of the series a custom I2C master is created using the MicroBlaze core and evaluating the bytes transferred.
+              </p>
+              <p>
+One problem with the standard PYNQ library is that it does not return the length of bytes transferred to/from the slave.
+Modifying the library, as shown in the demo, will overcome this missing feature. The demo presents three different ways of how to use the PMODA port to communicate with a INA219 current sensor from Adafruit via I2C.
+              </p>
+              <p>
+The <a href="https://github.com/myorbit/pynq-mods/blob/master/microblaze_custom_i2c_demo_ina219/microblaze_custom_i2c_demo_ina219.ipynb">notebook</a> including the source files of <a href="https://github.com/myorbit/pynq-mods/tree/master/microblaze_custom_i2c_demo_ina219">microblaze_custom_i2c_demo_ina219</a> can be found in the <a href="https://github.com/myorbit/pynq-mods">pynq-mods</a> github repository.
+              </p>
+            </div>
+          </section>
+           <section id="jupyter-live-plot">
             <div class="blog-post">
               <h3 class="page-header" id="jupyter-live-plot-header">
                   <a class="anchorjs-link " href="#overview" aria-label="Anchor link for: overview" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
@@ -343,6 +366,7 @@
           <div class="sidebar-module">
             <h4>Archives</h4>
             <ol class="list-unstyled">
+              <li><a href="#pynq-mods-custom-i2c-header">November 2019</a></li>
               <li><a href="#jupyter-live-plot-header">April 2019</a></li>
               <li><a href="#eup-technical-header">January 2019</a></li>
               <li><a href="#dynamic-live-plot-header">May 2018</a></li>
